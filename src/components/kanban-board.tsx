@@ -27,7 +27,7 @@ export function KanbanBoard() {
     <div className="m-auto flex min-h-screen w-full items-center overflow-x-auto overflow-y-hidden px-[40px] relative">
       
       <div className="flex flex-col gap-2 items-center absolute translate-x-1/2 top-8 right-1/2">
-        <img src="/logo.svg" alt="Logo" className="w-20 select-none pointer-events-none" />
+        <img src="/logo-verde.png" alt="Logo" className="w-20 select-none pointer-events-none" />
       </div>
 
       <DndContext
@@ -57,7 +57,7 @@ export function KanbanBoard() {
 
           <button
             onClick={() => createNewColumn()}
-            className="h-[60px] w-[350px] min-w-[350px] flex gap-2 items-center rounded-lg cursor-pointer bg-primary border border-secondary p-4 ring-rose-500 hover:ring-2"
+            className="h-[60px] w-[350px] min-w-[350px] flex gap-2 items-center rounded-lg cursor-pointer bg-primary border border-secondary p-4 ring-emerald-500 hover:ring-2"
           >
             <CirclePlus className="size-5" />
             Add Column

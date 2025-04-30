@@ -45,7 +45,7 @@ export function TaskCard({ task, handleDeleteTask, handleUpdateTask }: TaskCardP
       <div
         ref={setNodeRef}
         style={style}
-        className="opacity-50 bg-primary h-[100px] min-h-[100px] rounded-xl border border-rose-500"
+        className="opacity-50 bg-primary h-[100px] min-h-[100px] rounded-xl border border-emerald-500"
       />
     )
   }
@@ -57,7 +57,7 @@ export function TaskCard({ task, handleDeleteTask, handleUpdateTask }: TaskCardP
       style={style}
       {...attributes}
       {...listeners}
-      className="bg-primary p-2.5 h-[100px] min-h-[100px] flex items-center text-left rounded-xl hover:ring-2 hover:ring-inset hover:ring-rose-500 cursor-grab relative"
+      className="bg-primary p-2.5 h-[100px] min-h-[100px] flex items-center text-left rounded-xl hover:ring-2 hover:ring-inset hover:ring-emerald-500 cursor-grab relative"
     >
       <textarea
         value={task.content}
@@ -84,7 +84,7 @@ export function TaskCard({ task, handleDeleteTask, handleUpdateTask }: TaskCardP
       onClick={toggleEditMode}
       onMouseEnter={() => setMouseIsOver(true)}
       onMouseLeave={() => setMouseIsOver(false)}
-      className="bg-primary p-2.5 h-[100px] min-h-[100px] flex items-center text-left rounded-xl hover:ring-2 hover:ring-inset hover:ring-rose-500 cursor-grab relative task"
+      className="bg-primary p-2.5 h-[100px] min-h-[100px] flex items-center text-left rounded-xl hover:ring-2 hover:ring-inset hover:ring-emerald-500 cursor-grab relative task"
     >
       <p className="my-auto h-[90%] w-full overflow-y-auto overflow-x-hidden whitespace-pre-wrap">
         {task.content}
@@ -95,7 +95,7 @@ export function TaskCard({ task, handleDeleteTask, handleUpdateTask }: TaskCardP
           onClick={() => handleDeleteTask(task.id)}
           className="absolute right-4 top-1/2 -translate-y-1/2 bg-secondary p-2 rounded-md opacity-60 hover:opacity-100 transition-opacity"
         >
-          <Trash2Icon className="size-5 stroke-white" />
+          <Trash2Icon className="size-5 stroke-rose-500" />
         </button>
       )}
     </div>

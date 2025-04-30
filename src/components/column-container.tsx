@@ -58,7 +58,7 @@ export function ColumnContainer({
       <div
         ref={setNodeRef}
         style={style}
-        className="bg-secondary w-[350px] h-[500px] max-h-[500px] rounded-md flex flex-col opacity-40 border border-rose-500"
+        className="bg-secondary w-[350px] h-[500px] max-h-[500px] rounded-md flex flex-col opacity-40 border border-emerald-500"
       ></div>
     )
   }
@@ -91,7 +91,7 @@ export function ColumnContainer({
                   setEditMode(false)
                 }
               }}
-              className="bg-black focus:border-rose-500 focus:border rounded-md outline-none px-2"
+              className="bg-black focus:border-emerald-500 focus:border rounded-md outline-none px-2"
             />
           )}
         </div>
@@ -101,7 +101,7 @@ export function ColumnContainer({
           }}
           className="bg-secondary px-1 py-2 rounded group cursor-pointer"
         >
-          <Trash2 className="size-5 stroke-gray-500 group-hover:stroke-white" />
+          <Trash2 className="size-5 stroke-gray-500 group-hover:stroke-rose-500" />
         </button>
       </div>
       {/* Column task container */}
@@ -121,7 +121,7 @@ export function ColumnContainer({
       <div>
         <button
           onClick={() => handleCreateTask(column.id)}
-          className="w-full flex gap-2 items-center border-secondary border-2 rounded-md p-4 border-x-secondary hover:text-rose-500 hover:bg-primary active:bg-black"
+          className="w-full flex gap-2 items-center border-secondary border-2 rounded-md p-4 border-x-secondary hover:text-emerald-500 hover:bg-primary active:bg-black"
         >
           <CirclePlusIcon />
           Add task
